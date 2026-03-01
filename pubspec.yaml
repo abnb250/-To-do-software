@@ -1,0 +1,50 @@
+name: calendar_todo_app
+description: 日历+待办清单应用
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  
+  # 状态管理
+  flutter_riverpod: ^2.4.9
+  
+  # 日历组件
+  table_calendar: ^3.0.9
+  
+  # 本地存储
+  shared_preferences: ^2.2.2
+  
+  # 日期格式化
+  intl: ^0.18.1
+  
+  # 唯一ID生成
+  uuid: ^4.2.1
+  
+  # 动画
+  animations: ^2.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/images/
+  
+  fonts:
+    - family: NotoSansSC
+      fonts:
+        - asset: assets/fonts/NotoSansSC-Regular.otf
+        - asset: assets/fonts/NotoSansSC-Bold.otf
+          weight: 700
